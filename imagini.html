@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Imagini</title>
+</head>
+<body>
+	<div class="banner">
+	<div class="navbar">
+		<img src="logo2.png" class="logo">
+		<ul>
+			<li><a href="index.html">Principala</a></li>
+			<li> <a href="cartea_rosie.html">Cartea Roșie</a> </li>
+			<li><a href="imagini.html">Imagini</a></li>
+		</ul>
+	</div>
+	<div class="full" id="fullImgBox">
+		<img src="imagini/1.jpg" id="fullImg">
+		<span onclick="closeFullImg()">X</span>
+	</div>
+<div class="img">
+	<img src="imagini/1.jpg" onclick="openFullImg(this.src)">
+	<img src="imagini/2.jpg" onclick="openFullImg(this.src)">
+	<img src="imagini/4.jpg" onclick="openFullImg(this.src)">
+	<img src="imagini/5.jpg" onclick="openFullImg(this.src)">
+	<img src="imagini/6.jpg" onclick="openFullImg(this.src)">
+	<img src="imagini/7.jpg" onclick="openFullImg(this.src)">
+	<img src="imagini/8.jpg" onclick="openFullImg(this.src)">
+	<img src="imagini/9.jpg" onclick="openFullImg(this.src)">
+	<img src="imagini/10.jpg" onclick="openFullImg(this.src)">
+	<img src="imagini/11.jpg" onclick="openFullImg(this.src)">
+	<img src="imagini/13.jpg" onclick="openFullImg(this.src)">
+	<img src="imagini/14.jpg" onclick="openFullImg(this.src)">
+	<img src="imagini/a.jpg" onclick="openFullImg(this.src)">
+	<img src="imagini/b.jpg" onclick="openFullImg(this.src)">
+	<img src="imagini/d.jpg" onclick="openFullImg(this.src)">
+	<img src="imagini/e.jpg" onclick="openFullImg(this.src)">
+	<img src="imagini/f.jpg" onclick="openFullImg(this.src)">
+	<img src="imagini/g.jpg" onclick="openFullImg(this.src)">
+	<img src="imagini/i.jpg" onclick="openFullImg(this.src)">
+	<img src="imagini/j.jpg" onclick="openFullImg(this.src)">
+	<img src="imagini/k.jpg" onclick="openFullImg(this.src)">
+	<img src="imagini/l.jpg" onclick="openFullImg(this.src)">
+	<img src="imagini/m.jpg" onclick="openFullImg(this.src)">
+	<img src="imagini/n.jpg" onclick="openFullImg(this.src)">
+</div>
+<script>
+	var fullImgBox=document.getElementById('fullImgBox');
+	var fullImg=document.getElementById('fullImg');
+	function openFullImg(pic) {
+		fullImgBox.style.display="flex";
+		fullImg.src=pic;
+	}
+	function closeFullImg(){
+		fullImgBox.style.display="none";
+	}
+</script>
+</body>
+</html>

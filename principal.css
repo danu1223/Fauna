@@ -1,0 +1,106 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	scroll-behavior: smooth;
+}
+.banner{
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)),url(https://i.simpalsmedia.com/point.md/news/thumbnails/large/069d4d2fcdbcbb44a33e32dae735c4b3.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.navbar{
+	width: 85%;
+	margin: auto;
+	padding: 35px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.logo{
+	width: 120 px;
+	cursor: pointer;
+}
+.navbar ul li{
+	list-style: none;
+	display: inline-block;
+	margin: 0 20px;
+	position: relative;
+}
+.navbar ul li a{
+	text-decoration: none;
+	color: #fff;
+	text-transform:uppercase ;
+}
+.navbar ul li::after{
+	content: '';
+	height: 3px;
+	width: 0%;
+	background: #009688;
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	transition: 0.5s;
+}
+.navbar ul li:hover::after{
+	width: 100%;
+}
+.content{
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+	color: #fff;
+}
+.content h1{
+	font-size: 70px;
+	margin-top: 80px;
+}
+#btn{
+	text-decoration: none;
+	padding: 8px 30px;
+	border-radius: 40px;
+	background: #fff;
+	color: #2b1055;
+	font-size: 1.5em;
+	z-index: 9;
+	transform: translateY(100px);
+}
+.sec{
+	position: relative;
+	padding: 100px;
+	background: #1c0522;
+}
+.sec h2{
+	text-align: center;
+	font-size: 3.5em;
+	margin-bottom: 10px;
+	color: #fff;
+}
+.sec p{
+	font-size: 1.7em;
+	color: #fff;
+}
+.sec ul li{
+	font-size: 1.5em;
+	color: #fff;
+}
+.sec ol li{
+	font-size: 1.5em;
+	color: #fff;
+}
+.sec table{
+	font-size: 1.5em;
+	color: #fff;
+	text-align: center;
+}
+.sec table caption{
+	font-size: 1.7em;
+	color: #fff;
+}
+.border{
+	background-color: black;
+}

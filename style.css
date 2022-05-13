@@ -1,0 +1,89 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+.banner{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)),url(https://i.simpalsmedia.com/point.md/news/thumbnails/large/069d4d2fcdbcbb44a33e32dae735c4b3.jpg); 
+	 	background-size: cover;
+	background-position: center;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+}
+.navbar{
+	width: 85%;
+	margin: auto;
+	padding: 35px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.logo{
+	width: 120 px;
+	cursor: pointer;
+}
+.navbar ul li{
+	list-style: none;
+	display: inline-block;
+	margin: 0 20px;
+	position: relative;
+}
+.navbar ul li a{
+	text-decoration: none;
+	color: #fff;
+	text-transform:uppercase ;
+}
+.navbar ul li::after{
+	content: '';
+	height: 3px;
+	width: 0%;
+	background: #009688;
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	transition: 0.5s;
+}
+.navbar ul li:hover::after{
+	width: 100%;
+}
+.img{
+	width:100%;
+	margin: 30px auto 0;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+	grid-gap: 30px;
+}
+.img img{
+	width: 100%;
+	cursor: pointer;
+}
+.img img:hover{
+	transform: scale(0.8) rotate(-15deg);
+	border-radius: 20px;
+	box-shadow: 0 32px 75px rgba(68, 77, 136, 0.2);
+	transition: 0.4s;
+}
+.full{
+	width: 100%;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.9);
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	z-index: 100;
+}
+.full img{
+	width: 90%;
+	max-width: 1000px;
+}
+.full span{
+	position: absolute;
+	top: 5%;
+	right: 5%;
+	font-size: 30px;
+	color: white;
+	cursor: pointer;
+}
